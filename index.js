@@ -81,7 +81,7 @@ async function run() {
             const newQuery = { $set: { status: 'approved' } }
             const result = await ordersCollection.updateOne(query, newQuery);
             console.log('load user with id :', id)
-            res.json(result)
+            res.json(result);
         })
 
 
